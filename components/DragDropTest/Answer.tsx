@@ -3,12 +3,12 @@ import { StringifyOptions } from "querystring"
 import { useDrag } from "react-dnd"
 
 interface Params {
-    text: string 
+    text: string
     id: number
 }
 
-export default function Answer({text, id}: Params) {
-    const [{ isDragging,  }, drag] = useDrag(() => ({
+export default function Answer({ text, id }: Params) {
+    const [{ isDragging, }, drag] = useDrag(() => ({
         type: DnDTypes.OPTION,
         item: {
             id,

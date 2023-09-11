@@ -17,7 +17,7 @@ export default function Slot() {
         () => ({
             accept: DnDTypes.OPTION,
             drop: (item, monitor) => updateAnswer(item as Id),
-            collect: ( monitor) => ({
+            collect: (monitor) => ({
                 isOver: !!monitor.isOver()
             })
         }),

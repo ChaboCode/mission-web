@@ -7,7 +7,7 @@ function ButtonGrid({ data, component }: { data: CardButtonData[], component?: J
 
     return (
         <div className="flex justify-center m-6">
-            <div className="w-10/12 grid grid-cols-7 gap-16">{buttons}</div>
+            <div className="w-10/12 grid grid-cols-5 gap-8 lg:gap-8 lg:grid-cols-7">{buttons}</div>
         </div>
 
     )
